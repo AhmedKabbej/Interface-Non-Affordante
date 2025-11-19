@@ -19,7 +19,7 @@ container.appendChild(fakeButton);
 app.appendChild(container);
 
 // ---- Attacher la musique au bouton ----
-attachMusicToButton(fakeButton);
+// attachMusicToButton(fakeButton);
 
 // ---- Cercle draggable ----
 const dragBall = document.createElement("div");
@@ -128,3 +128,4 @@ function startHackerEffect() {
     });
   }, 50);
 }
+
