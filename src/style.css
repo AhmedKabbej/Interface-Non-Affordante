@@ -1,0 +1,64 @@
+/* ---- Style général ---- */
+body {
+  background: #f7f7f7;
+  color: #111;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  opacity: 0; /* anim GSAP */
+  transform: translateY(20px);
+  transition: color 0.2s ease;
+}
+
+p {
+  transform: translateY(10px);
+}
+
+.hidden-button {
+  user-select: none;
+  font-size: 1rem;
+  color: #7d7d7d;
+  cursor: default;
+  transition: transform 0.25s ease, color 0.2s ease;
+  opacity: 0; /* anim GSAP */
+  transform: translateY(10px);
+}
+
+.hidden-button.active {
+  color: #111;
+  transform: scale(1.15);
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+}
+
+/* ---- Cercle draggable ---- */
+.draggable {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #111;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  cursor: grab;
+  opacity: 0;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
